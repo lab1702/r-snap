@@ -1,0 +1,65 @@
+name: r-project
+base: core24
+version: '4.4.1-snap0.1'
+summary: R
+description: |
+  R Core Team (2024). _R: A Language and Environment for Statistical
+  Computing_. R Foundation for Statistical Computing, Vienna, Austria.
+  <https://www.R-project.org/>.
+
+grade: devel
+confinement: strict
+
+parts:
+  r-base:
+    source: https://cloud.r-project.org/src/base/R-4/R-4.4.1.tar.gz
+    plugin: make
+    build-packages:
+      - bash-completion
+      - ca-certificates
+      - curl
+      - default-jdk
+      - devscripts
+      - file
+      - fonts-texgyre
+      - g++
+      - gfortran
+      - gsfonts
+      - libblas-dev
+      - libbz2-dev
+      - libcairo2-dev
+      - libcurl4-openssl-dev
+      - libicu-dev
+      - libjpeg-dev
+      - liblapack-dev
+      - liblzma-dev
+      - libpango1.0-dev
+      - libpcre2-dev
+      - libpng-dev
+      - libreadline-dev
+      - libssl-dev
+      - libtiff5-dev
+      - libx11-dev
+      - libxt-dev
+      - make
+      - perl
+      - rsync
+      - subversion
+      - tcl-dev
+      - texinfo
+      - texlive-extra-utils
+      - texlive-fonts-extra
+      - texlive-fonts-recommended
+      - texlive-latex-extra
+      - texlive-latex-recommended
+      - tk-dev
+      - tzdata
+      - unzip
+      - wget
+      - x11proto-core-dev
+      - xauth
+      - xfonts-base
+      - xorg-dev
+      - xvfb
+      - zip
+      - zlib1g-dev
